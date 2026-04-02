@@ -1623,12 +1623,12 @@ impl Menu {
             );
             menu.addItem(&full_screen_item);
 
-            let create_new_window = NSMenuItem::new(mtm);
-            create_new_window.setTitle(ns_string!("New Window"));
-            create_new_window.setKeyEquivalent(ns_string!("n"));
-            create_new_window.setAction(Some(sel!(neovideCreateWindow:)));
-            create_new_window.setTarget(Some(&self.new_window_handler));
-            menu.addItem(&create_new_window);
+            // let create_new_window = NSMenuItem::new(mtm);
+            // create_new_window.setTitle(ns_string!("New Window"));
+            // create_new_window.setKeyEquivalent(ns_string!("n"));
+            // create_new_window.setAction(Some(sel!(neovideCreateWindow:)));
+            // create_new_window.setTarget(Some(&self.new_window_handler));
+            // menu.addItem(&create_new_window);
 
             if should_show_native_tab_bar() {
                 let show_all_tabs_item = NSMenuItem::new(mtm);
